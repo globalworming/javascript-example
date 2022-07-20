@@ -12,9 +12,16 @@
   const runMyScriptAs = (s) => {
     setTimeout(() => {
       document.getElementById("greeting").innerHTML = "<h1>hello " + s + "</h1>";
-    }, 2000);
+    }, 1000);
+
+    setTimeout(() => {
+      test()
+    }, 1100);
   };
 </script>
+
+<script src="tests/greeting.js"></script>
+
 </body>
 
 </html>
