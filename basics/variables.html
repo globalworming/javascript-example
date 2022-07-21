@@ -9,10 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
 </head>
 <body onload="runScript(); runTest()">
-
+<h1>Variables</h1>
 <pre>
+    variables can be declared with 'const'
     <code class="language-javascript">
-        // variables can be declared with 'const'
         const x = 'hello';
         console.log(x)
         // -> 'hello'
@@ -20,8 +20,8 @@
         x = 'change'
         // -> Uncaught TypeError: Assignment to constant variable.
     </code>
+    reassign variables by declaring them with 'let'
     <code class="language-javascript">
-        // reassign variables by declaring them with 'let'
         let y = 'hello';
         console.log(y)
         // -> 'hello'
@@ -29,6 +29,7 @@
         console.log(y)
         // -> 'change'
     </code>
+    use const wherever possible, there rarely is a need to reassign stuff
 </pre>
 
 <h3>Your Task:</h3>
