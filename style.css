@@ -5,6 +5,10 @@
     animation: spin 2s linear infinite;
 }
 
+.error {
+    color: red;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
