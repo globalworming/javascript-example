@@ -8,28 +8,28 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
 </head>
-<body onload="runScript(); runTest()">
+<body onload="runScript(); RunTest.variables()">
 <h1>Variables</h1>
 <pre>
-    variables can be declared with 'const'
-    <code class="language-javascript">
-        const x = 'hello';
-        console.log(x)
-        // -> 'hello'
-        // 'const' can't be changed though
-        x = 'change'
-        // -> Uncaught TypeError: Assignment to constant variable.
-    </code>
-    reassign variables by declaring them with 'let'
-    <code class="language-javascript">
-        let y = 'hello';
-        console.log(y)
-        // -> 'hello'
-        y = 'change'
-        console.log(y)
-        // -> 'change'
-    </code>
-    use const wherever possible, there rarely is a need to reassign stuff
+variables can be declared with 'const'
+<code class="language-javascript">
+const x = 'hello';
+console.log(x)
+// -> 'hello'
+// 'const' can't be changed though
+x = 'change'
+// -> Uncaught TypeError: Assignment to constant variable.
+</code>
+reassign variables by declaring them with 'let'
+<code class="language-javascript">
+let y = 'hello';
+console.log(y)
+// -> 'hello'
+y = 'change'
+console.log(y)
+// -> 'change'
+</code>
+use const wherever possible, there rarely is a need to reassign stuff, reassigning can be confusing for the reader
 </pre>
 
 <h3>Your Task:</h3>
