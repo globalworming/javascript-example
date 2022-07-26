@@ -31,5 +31,20 @@ const RunTest =  {
             }
         }, 1000)
 
+    },
+    operators1() {
+        setTimeout(() => {
+            try {
+                let text = document.getElementById("heroes").innerText;
+                if (parseInt(text) !== 9) {
+                    document.getElementsByClassName("error")[0].textContent = `test failed, expected 9, found ${text}`
+                } else {
+                    document.getElementById("displayOnSuccess").hidden = false
+                }
+            } catch (e) {
+                document.getElementsByClassName("error")[0].textContent = e.message + "\n\n" + e.stack
+                throw e
+            }
+        }, 1000)
     }
 }
