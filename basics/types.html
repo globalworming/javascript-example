@@ -16,11 +16,15 @@ variables have a type
 const truth = false;
 const quote = 'hello';
 const count = 1;
+const infinite = Infinity // e.g. when calculating 1 / 0
+const notANumber = NaN // e.g. when calculating 0 / 0
 const thing = {};
 const emptyArray = [];
 console.log(typeof truth) // boolean
 console.log(typeof quote) // string
 console.log(typeof count) // number
+console.log(typeof infinite) // number
+console.log(typeof notANumber) // number
 console.log(typeof thing) // object
 console.log(typeof emptyArray) // object, https://stackoverflow.com/a/12996879/1359903
 </code>
